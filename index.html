@@ -1,0 +1,133 @@
+<head>
+    <meta charset="UTF-8">
+    <title>PS23299_PhanMinhTrienBang</title>
+    <link rel="stylesheet" href="giohang.js">
+    <link rel="stylesheet" href="giohang.css">
+</head>
+
+<body vlink="black">
+    <div class="giohang" onclick="anhien()">
+        <a onclick="laydon();"><img src="images/cart.jpg"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart" style="display: none;">
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+                
+            </tbody>
+
+        </table>
+    </div>>
+    </div> 
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a onclick="cligiohang()">Giỏ hàng</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="bai1.html">Giải toán</a></li>
+                <li><a href="bai3.html">Quản lý giỏ hàng</a></li>
+                <li><a href="bai4.html">Đăng ký</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="ro">
+                <div id="slide">
+                    <img id="hinh" src="images/pang.jpg" width="1000px">
+                    <div class="dieuhuong">
+                            <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+                            <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+                    </div>
+                    <p id="dem"></p>
+                </div>
+            </div>
+            <table>
+                <tbody id="cgh"></tbody>
+            </table>
+            <div id="conts">
+                <div class="row">
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/1.jpg" alt=""></div>
+                        <p>$<span>1.25</span></p>
+                        <a href="https://www.anphatpc.com.vn/Laptop-msi_dm1065.html?gclid=CjwKCAjw6dmSBhBkEiwA_W-EoE2YD8pVf_8e2nvWEzliWCv5VT-m-a2vkrPTQvrCbQhr58jCWw1kkBoCJtEQAvD_BwE">Laptop MSI Gaming GF63</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt </button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/2.jpg" alt=""></div>
+                        <p>$<span>3</span></p>
+                        <a href="https://fptshop.com.vn/may-tinh-xach-tay?nhu-cau=gaming-do-hoa&sort=ban-chay-nhat&utm_source=GSN_ECOM&utm_campaign=Laptop%20-%20Search%20-%20Laptop%20Chung%20-%202220%20Apr%20-%20Ecom&utm_medium=CPC&utm_content=Laptop%20Gaming&utm_term=laptop%20gaming&gclid=CjwKCAjw6dmSBhBkEiwA_W-EoCYp-fYW3wsBT0DUiZOOAIaiilVpM4sJejVwpX46OgtpKOEsvCYGGRoCGkEQAvD_BwE">Laptop Asus Gaming ROG</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/3.jpg" alt=""></div>
+                        <p>$<span>3.25</span></p>
+                        <a href="https://www.anphatpc.com.vn/laptop-gaming-acer-nitro-5-an515-45-r6ev-nh.qbmsv.006.html">Laptop Acer Nitro 5 Gaming</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt </button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/4.jpg" alt=""></div>
+                        <p>$<span>1.3</span></p>
+                        <a href="https://www.anphatpc.com.vn/laptop-dell-alienware-m15-r6-0272633.html">Laptop Dell Gaming Alienware m15 R6</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/5.jpg" alt=""></div>
+                        <p>$<span>2</span></p>
+                        <a href="https://www.anphatpc.com.vn/tim?scat_id=&q=Laptop+Lenovo+Gaming+Legion+5">Laptop Lenovo Gaming Legion 5</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt </button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/6.jpg" alt=""></div>
+                        <p>$<span>2.8</span></p>
+                        <a href="https://www.anphatpc.com.vn/tim?scat_id=&q=Laptop+Asus+TUF+Gaming+FX516PM">Laptop Asus TUF Gaming FX516PM</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt </button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/7.jpg" alt=""></div>
+                        <p>$<span>5</span></p>
+                        <a href="https://www.anphatpc.com.vn/laptop-acer-gaming-nitro-5-eagle-an515-57-720a-nh.qeqsv.004-core-i7-11800h-8gb-512gb-rtx-3050-ti-4gb-15.6-inch-fhd-win-11-den.html">Laptop Acer Nitro 5 AN515</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt</button>
+                    </div>
+                    <div class="boxsp mr">
+                        <div class="row img"><img src="images/8.jpg" alt=""></div>
+                        <p>$<span>2.5</span></p>
+                        <a href="https://www.anphatpc.com.vn/laptop-dell-g15-ryzen-edition-5515-70266674.html">Laptop Dell Gaming G15</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt</button>
+                    </div>
+                    <div class="boxsp ">
+                        <div class="row img"><img src="images/9.jpg" alt=""></div>
+                        <p>$<span>5.8</span></p>
+                        <a href="https://www.anphatpc.com.vn/laptop-hp-victus-16-e0177ax-4r0u9pa-ryzen-5-5600h-8gb-512gb-ssd-gtx-1650-4gb-16.1-inch-fhd-win-11_id38975.html">Laptop HP Gaming VICTUS</a>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="giohang.js"></script>
+    <script>
+        showcountsp();
+        
+    </script>
+</body>
+</html>

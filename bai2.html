@@ -1,0 +1,103 @@
+<html>
+    <head> 
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+       <title>Phan Bằng</title>
+        <meta charset="utf-8">
+
+    <style>
+            body{
+                background-color:wheat;
+            }
+            h2{
+                text-align: center;
+            }
+            .container{
+             width: 1000px;height: 500px; margin: 0px auto; position: relative;
+             background-color: wheat;
+             border: 6px solid white;
+                        }
+            .container h2{
+            text-align: center;
+            color: red;
+            padding-top: 25px;
+            
+            }
+            .container img{
+                border: 15px 15px 0px 0px;
+                width: 100%; height: 100%;
+            }
+            .container i:first-child{
+                position: absolute; top: 95%; left: 45px;
+                color: red; font-size: 40px;
+            }
+            .container i:last-child{
+                position: absolute; top: 95%; right: 45px;
+                color: red; font-size: 40px;
+            }
+            .container p#dem{
+                border-radius: 0 0 15px 15px;
+                margin: 0px; padding:10px 0;
+                background-color: black; color: white;
+                text-align: center;
+                font-size: 1.2em; font-weight: bold;
+            }
+
+
+
+
+
+    </style>
+    </head>
+
+    <body>
+       <h2>Album ảnh các đội tuyển vô địch WorldCup thế kỉ 21</h2>
+        <div class="container">
+            
+            <img id="img" src="images/0.jpg.jpg" >
+        <div class="dieuhuong">
+            <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+            <i class="fa fa-chevron-circle-right" onclick="next()"></i>
+        </div>
+        <p id="dem"></p> 
+        </div>
+        <script>
+            var index=1;
+            changeImage=function(){
+            var imgs =["images/0.jpg.jpg",  "images/1.jpg.jpg", "images/2.jpg.jpg","images/3.jpg.jpg","images/4.jpg.jpg","images/5.jpg.jpg","images/6.jpg.jpg","images/7.jpg.jpg",]
+            document.getElementById('img').src= imgs[index];
+            index++;
+                if(index==6){
+                    index=0;
+                }
+        }
+        setInterval(changeImage,1000);
+        </script>
+    </body>
+    
+</html>
+ <script>
+    var arr_hinh=[
+        "images/0.jpg.jpg",
+        "images/1.jpg.jpg",
+        "images/1.jpg.jpg",
+        "images/2.jpg.jpg",
+        "images/3.jpg.jpg",
+        "images/4.jpg.jpg",
+        "images/5.jpg.jpg",
+       
+    ]
+    var index=1;
+    function next(){
+    index++;
+    if(index>=arr_hinh.length)index=0;
+    document.getElementById('hinh');
+    hinh.src=arr_hinh[index];
+    document.getElementById('dem').innerHTML =index+"/" + arr_hinh.length;
+}
+    function prev(){
+    index--;
+    if(index<1) index= arr_hinh.length -1;
+    document.getElementById('hinh').src=arr_hinh[index];
+    document.getElementById('dem').innerHTML =index+"/" + arr_hinh.length;
+}
+</script>
